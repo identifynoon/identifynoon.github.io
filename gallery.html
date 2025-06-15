@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <style>
+      div.gallery {
+        border: 1px solid #917400;
+        box-shadow: 0 0 20px rgba(183, 75, 75, 0.5); 
+        border-radius: 10px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      
+      div.gallery:hover {
+        border: 1px solid #917400;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .gallery-text h1 {
+        font-size: 4rem;
+        margin-bottom: 0.1rem;
+        color: #917400;
+        text-align: center;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+        margin-bottom: 20px;
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .video-wrapper {
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid #917400;
+  box-shadow: 0 0 0px rgba(183, 75, 75, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+      </style>
+
+    <title>faris's gallery</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    
+  </head>
+  <body>
+    <header>
+        <a href="#" class="logo">@farrriissss</a>
+
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="biodata.html" >Biodata</a>
+            <a href="experience.html" >Experience</a>
+            <a href="education.html" >Education</a>
+            <a href="family.html" >Family</a>
+            <a href="gallery.html" class="active" >Gallery</a>
+        </nav>
+      </header>
+
+    <div class="fadeInUp-animation">
+
+
+              <div class="gallery-text">
+                  <h1>GALLERY</h1>
+              </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="cheesetart.jpg">
+          <img src="cheesetart.jpg" alt="cheesetart">
+        </a>
+        <div class="desc">Eating cheesetart at Stulang, Johor</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="kangkarpulai.jpg">
+          <img src="kangkarpulai.jpg" alt="kangkarpulai">
+        </a>
+        <div class="desc">Kangkar Pulai's sunset</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="mirror.jpg">
+          <img src="mirror.jpg" alt="mirror">
+        </a>
+        <div class="desc">Food stalls behind McDonalds in Stulang, Johor</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="mbip.jpg">
+          <img src="mbip.jpg" alt="mbip">
+        </a>
+        <div class="desc">I don't even know how to explain</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="cloud.jpg">
+          <img src="cloud.jpg" alt="cloud">
+        </a>
+        <div class="desc">Cloud straight from an anime</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="orangesky.jpg">
+          <img src="orangesky.jpg" alt="orangesky">
+        </a>
+        <div class="desc">Orange sky during sunset at KTM Kulai</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="rainbow.jpg">
+          <img src="rainbow.jpg" alt="rainbow">
+        </a>
+        <div class="desc">Rainbow appeared at KTM Kulai</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="sunset.jpg">
+          <img src="sunset.jpg" alt="sunset">
+        </a>
+        <div class="desc">Another sunset at KTM Kulai </div>
+      </div>
+    </div>
+
+<div class="video-wrapper">
+  <video controls>
+    <source src="wanganmidnight.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+    </div>
+
+
+<footer>
+  <p>© Copyright 2025 farrriiissss</p>
+</footer>
+
+    </body>
+    </html>
