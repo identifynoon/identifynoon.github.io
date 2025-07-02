@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>faris's biodata</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    
+  </head>
+
+  <body onload="startTime()">
+    <header>
+        
+        <div class="logo-clock">
+           <a href="#" class="logo">@farrriissss</a>
+           <div id="txt" class="clock"></div>
+        </div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+
+function toggleMenu() {
+  document.getElementById('navbar').classList.toggle('active');
+}
+
+</script>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+           <i class="fas fa-bars"></i>
+      </div>
+
+        <nav id="navbar">
+            <a href="index.html" >Home</a>
+            <a href="biodata.html" class="active" >Biodata</a>
+            <a href="experience.html" >Experience</a>
+            <a href="education.html" >Education</a>
+            <a href="family.html"  >Family</a>
+            <a href="gallery.html" >Gallery</a>
+        </nav>
+    </header>
+
+    <div class="fadeInUp-animation">
+
+      
+    <section class="about-section">
+      <img src="genting.jpg" alt="genting">
+      <div class="about-text">
+        <h1>About Me</h1>
+        <p>A 21 years old student currently pursuing Diploma in Information Management Semester 5 at UiTM Segamat with a goal to achieve something in life.</p>
+        <p>Borned in Kluang, Johor and lived at Felda Ulu Belitong for a while before moving out to Felda Bukit Batu following my father's path. In 2013, we moved out again due to my father's retirement as a Felda officer to Kampung Melayu Kangkar Pulai.</p>
+
+      <h2>More About Me</h2>
+      <br>
+
+<table>
+
+  <tr>
+    <td style="width:40%">Favourite Song 🎧</td>
+    <td><li>Bunga - Exists</li>
+        <li>Masih Terserlah Ayumu - Exists</li>
+        <li>Janji Padamu - Exists</li>
+    </td>
+
+  </tr>
+  <tr>
+    <td>Skills 💪</td>
+        <td><li>Photography</li>
+        <li>Drumming</li>
+        <li>Editing</li>
+    </td>
+
+  </tr>
+  <tr>
+    <td>Fun Fact 🔍</td>
+        <td><li>Actually 190+ cm</li>
+        <li>Masih Terserlah Ayumu - Exists</li>
+        <li>Janji Padamu - Exists</li>
+    </td>
+    
+  </tr>
+
+  <tr>
+    <td>Language Spoken 🗣</td>
+    <td><li>Malay</li>
+        <li>English</li>
+    </td>
+    
+  </tr>
+
+    <tr>
+    <td>Go-To Comfort Activity 🗣</td>
+    <td><li>Video Games</li>
+        <li>Music</li>
+        <li>Nature</li>
+    </td>
+    
+  </tr>
+</table>
+
+  </div>
+
+      </section>
+      </div>
+
+           <script src="https://static.elfsight.com/platform/platform.js" async></script>
+          <div class="elfsight-app-a66104f2-8cba-4ae7-81bc-ff4ca03d4573" data-elfsight-app-lazy></div>      
+  
+
+        <div class="fadeInUp-animation">
+          <div class="footer"> 
+           <p>© Copyright 2025 farrriiissss</p>
+        </footer>
+        </div>
+
+
+  </body>
+</html>
