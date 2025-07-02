@@ -11,12 +11,42 @@
     <link rel="icon" type="image/x-icon" href="logo.png">
 
   </head>
-  <body>
+  <body onload="startTime()">
     <header>
         
-        <a href="#" class="logo">@farrriissss</a>
+        <div class="logo-clock">
+           <a href="#" class="logo">@farrriissss</a>
+           <div id="txt" class="clock"></div>
+        </div>
 
-        <nav>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+
+function toggleMenu() {
+  document.getElementById('navbar').classList.toggle('active');
+}
+
+</script>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+           <i class="fas fa-bars"></i>
+      </div>
+
+        <nav id="navbar">
             <a href="index.html" class="active">Home</a>
             <a href="biodata.html" >Biodata</a>
             <a href="experience.html" >Experience</a>
@@ -47,8 +77,14 @@
     </section>
         </div>
 
-<div class="footer">  <p>© Copyright 2025 farrriiissss</p>
-</footer>
+           <script src="https://static.elfsight.com/platform/platform.js" async></script>
+          <div class="elfsight-app-a66104f2-8cba-4ae7-81bc-ff4ca03d4573" data-elfsight-app-lazy></div>
+
+        <div class="fadeInUp-animation">
+          <div class="footer"> 
+           <p>© Copyright 2025 farrriiissss</p>
+        </footer>
+        </div>
 
   </body>
 </html>
