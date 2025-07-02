@@ -6,74 +6,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>faris's education</title>
+    <title>faris's experience</title>
     <link rel="icon" type="image/x-icon" href="logo.png">
     
-    <style>
-      .experience-section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 4rem;
-        padding: 5rem 10%;
-      }
-  
-      .experience-section img {
-        width: 100%;
-        max-width: 500px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px #917400;
-        object-fit: cover;
-      }
-  
-      .experience-text {
-        max-width: 600px;
-      }
-  
-      .experience-text h1 {
-        font-size: 4rem;
-        margin-bottom: 1rem;
-        color: #917400;
-      }
-  
-      .experience-text h5 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: #917400;
-      }
-  
-      .experience-text p {
-        font-size: 1.6rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-      }
-  
-      @media(max-width: 768px) {
-        .experience-section {
-          flex-direction: column;
-          text-align: center;
-        }
-  
-        .experience-text h1 {
-          font-size: 3rem;
-        }
-  
-        .experience-text h5 {
-          font-size: 1.8rem;
-        }
-  
-        .experience-text p {
-          font-size: 1.4rem;
-        }
-      }
-    </style>
-
   </head>
-  <body>
+  <body onload="startTime()">
     <header>
-        <a href="#" class="logo">@farrriissss</a>
+        
+        <div class="logo-clock">
+           <a href="#" class="logo">@farrriissss</a>
+           <div id="txt" class="clock"></div>
+        </div>
 
-        <nav>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+
+function toggleMenu() {
+  document.getElementById('navbar').classList.toggle('active');
+}
+
+</script>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+           <i class="fas fa-bars"></i>
+      </div>
+
+        <nav id="navbar">
             <a href="index.html" >Home</a>
             <a href="biodata.html"  >Biodata</a>
             <a href="experience.html" class="active" >Experience</a>
@@ -94,12 +66,16 @@
       </section>
       </div>
 
-    <!-- End page content -->
+           <script src="https://static.elfsight.com/platform/platform.js" async></script>
+          <div class="elfsight-app-a66104f2-8cba-4ae7-81bc-ff4ca03d4573" data-elfsight-app-lazy></div>
+
     </div>
 
-<footer>
-  <p>© Copyright 2025 farrriiissss</p>
-</footer>
+        <div class="fadeInUp-animation">
+          <div class="footer"> 
+           <p>© Copyright 2025 farrriiissss</p>
+        </footer>
+        </div>
 
   </body>
 </html>
